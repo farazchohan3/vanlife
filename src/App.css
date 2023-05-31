@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+/* 
+font-family: 'Lora', serif; */
+/* font-family: "Ubuntu", sans-serif; */
+header {
+  background-color: #fff7ed;
+}
+
+/* Home Page CSS  START*/
+
+.container-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.hero-content {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff7ed;
+  position: absolute;
+  top: 25%;
+  margin-left: 3em;
+}
+.hero-subheading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  font-weight: 800;
+}
+.hero-paragraph {
+  font-family: "Lora", serif;
+  font-size: 1.35rem;
+  margin-bottom: 1em;
+  font-weight: 100;
+}
+.btn-plan {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  width: 70%;
+  border-radius: 0.1em;
+  padding: 0.5em 0;
+  color: white;
+  border: none;
+  background-color: #ff8c38;
+}
+footer {
+  background-color: #252525;
+}
+@media (max-width: 645px) {
+  .hero-content {
+    left: 1;
+  }
+  .hero-subheading {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .hero-paragraph {
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+}
+/* Home Page CSS  END*/
+
+/* About Page CSS Start */
+.about-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.about-content-container {
+  width: 94%;
+  margin: 0 auto;
+}
+.about-content {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #161616;
+}
+.about-paragraph {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+}
+.explore-van-wrapper {
+  width: 100%;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  background: #ffcc8d;
+  border-radius: 5px;
+}
+.explore-box-content {
+  font-family: "Ubuntu", sans-serif;
+  font: 1.5rem;
+  font-weight: 700;
+}
+.Explore-van-button {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.25em 0;
+  background: #161616;
+  border-radius: 10px;
+}
+.about-link {
+  padding: 1.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* About Page CSS end */
+
+/* Van Page CSS Start */
+.van-list-container {
+  padding-inline: 23px;
+  margin-bottom: 3em;
+}
+
+.van-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 34px;
+  margin-top: 57px;
+}
+
+.van-tile a {
+  color: #161616;
+  text-decoration: none;
+}
+
+.van-tile img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.van-list-container button {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.van-type {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+  color: #ffead0;
+}
+
+.van-type:focus {
+  outline: none;
+}
+
+.van-type.selected {
+  color: #ffead0;
+}
+
+.van-type.simple:hover,
+.van-type.simple.selected {
+  background-color: #e17654;
+}
+
+.van-type.rugged:hover,
+.van-type.rugged.selected {
+  background-color: #115e59;
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+  background-color: #161616;
+}
+
+.van-type.clear-filters {
+  margin-left: -20px;
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+
+i[class*="van-type-"] {
+  padding: 7px 14px;
+}

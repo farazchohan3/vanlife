@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+/* 
+font-family: 'Lora', serif; */
+/* font-family: "Ubuntu", sans-serif; */
+/* Typography */
+.title {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 0%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logoLink {
+  color: black;
+}
+.logoLink:hover,
+.logoLink:focus {
+  color: orangered;
+}
+.subTitle {
+  font-family: "Lora", serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+ul {
+  list-style-type: none;
+
+  padding: 0%;
+  display: flex;
+}
+li {
+  margin: 0 2em;
+}
+li a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: black;
+}
+.navLink:hover,
+.navLink:focus {
+  color: orangered;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.15em;
+}
+@media (max-width: 645px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  li {
+    text-align: center;
+  }
+}
